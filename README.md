@@ -1,0 +1,1 @@
+A recreation of the default Google homepage using HTML and CSS to get a better understanding of both.
