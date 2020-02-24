@@ -81,7 +81,7 @@ footer {
     padding-right: 10px;
 }
 
-.how-search {
+#how-search {
     word-spacing: 1pt;
 }
 
@@ -161,16 +161,28 @@ footer {
 body.dark {
     --background-color: #333;
     --text-color: white;
+    --high-emphasis-opacity: 0.8;
+    --med-emphasis-opacity: 0.6;
 
     transition: var(--transition-delay);
     background-color: var(--background-color);
 }
 
-a.dark {
+a.dark,
+.footer-element.dark {
+    transition: var(--transition-delay);
     color: var(--text-color);
+    opacity: var(--high-emphasis-opacity);
+}
+
+footer.dark {
+    transition: var(--transition-delay);
+    background-color: #121212;
+    border: none;
 }
 
 .theme-changer {
     transition: var(--transition-delay);
     transform: scale(1);
 }
+
