@@ -1,7 +1,9 @@
 body {
+    --transition-delay: 1s;
+
     font-family: Arial, Helvetica, sans-serif;
-    /* margin: 0; */
     overflow: hidden;
+    transition: var(--transition-delay);
 }
 
 a, #grid-icon {
@@ -153,4 +155,22 @@ footer {
     border-color: #5F6368;
     color: #f8f8f8;
     color: #222;
+}
+
+/* Beginning of dark mode styles */
+body.dark {
+    --background-color: #333;
+    --text-color: white;
+
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+}
+
+a.dark {
+    color: var(--text-color);
+}
+
+.theme-changer {
+    transition: var(--transition-delay);
+    transform: scale(1);
 }
