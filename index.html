@@ -1,85 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Google</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    </head>
-    <body>
-        <header>
-            <ul>
-                <div class="navbar_left">
-                    <li>
-                        <a href="https://about.google/intl/en/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-                    </li>
-                    <li id="navbar_store">
-                        <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-                    </li>
-                </div>
-                <div class="navbar_right">
-                    <li>
-                        <a href="https://www.google.com/imghp?hl=en&tab=wi0&authuser=0&ogbl">Images</a>
-                    </li>
-                    <li id="navbar_gmail">
-                        <a href=https://mail.google.com/mail/?tab=wm0&authuser=0&ogbl">Gmail</a>
-                    </li>
-                    <li id="grid_icon">
-                        <i class="fas fa-th"></i>
-                    </li>
-                    <li id="sign_in">
-                        <input type="button" value="Sign in">
-                    </li>
-                </div>
-            </ul>
-        </header>
-        <div class="center_content">
-            <div id="logo">
-                <img src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
-                alt="Google" height="92" width="272">
-            </div>
-            <div class="search-box">
-                <input type="text" name="" class="search-txt"/>
-                <a class="search-btn" href="#">
-                <i class="fas fa-search"></i>
-                </a>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Google</title>
+</head>
+<body>
+    <header class="header-left">
+        <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">
+        About</a>
+        <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+        Store </a>
+    </header>
+    <header class="header-right">
+        <a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">
+        Gmail</a>
+        <a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl">
+        Images</a>
+        <i id='grid-icon' class="fas fa-th"></i>
+        <button>Sign in</button>
+    </header>
+    <div class='center-container'>
+        <div class='logo'>
+            <img src="images/googlelogo_color_272x92dp.png" 
+            alt="Google" height="92" width="272">
         </div>
-        <div class="buttons">
-            <ul>
-                <li>
-                    <input type="button" value="Google Search">
-                </li>
-                <li>
-                    <input type="button" value="I'm feeling lucky" id="lucky">
-                </li>
-            </ul>
+        <div class='search-container'>
+            <i class="fas fa-search" id='search-icon'></i>
+            <input type='text' class='search-bar'>
         </div>
-        <div class="footer">
-            <ul>
-                <div class="footer_left">
-                    <li>
-                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQkdQCCBc&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQktQCCBg&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
-                    </li>
-                    <li id="search_works">
-                        <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
-                    </li>
-                </div>
-                <div class="footer_right">
-                    <li>
-                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQ8awCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Settings</a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQzq0CCBU&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den%26client%3Dsafari&usg=AOvVaw0EdGNytfLu01w-9rMmX_eZ">Privacy</a>
-                    </li>
-                </div>
-            </ul>
+        <div class='button-container'>
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
         </div>
-    </body>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQkdQCCBc&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">
+            Advertising</a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQktQCCBg&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">
+            Business</a>
+            <a class='how-search' href="https://google.com/search/howsearchworks/?fg=1">
+            How Search Works</a>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQzq0CCBU&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den%26client%3Dsafari&usg=AOvVaw0EdGNytfLu01w-9rMmX_eZ">
+            Privacy</a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">
+            Terms</a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj79LOygc3mAhXVoFsKHTjQBGAQ8awCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">
+            Settings</a>
+        </div>
+    </footer>
+</body>
 </html>
