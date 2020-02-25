@@ -40,7 +40,9 @@ header {
     float: right;
 }
 
+/* Sign in button */
 .header-right button {
+    cursor: pointer;
     background-color: #236df5;
     line-height: 27px;
     border: 1px;
@@ -50,6 +52,7 @@ header {
     font-weight: bold;
     font-size: 10pt;
     width: 70px;
+    outline: none;
 }
 
 footer {
@@ -170,10 +173,15 @@ body.dark {
 }
 
 a.dark,
-.footer-element.dark {
+.footer-element.dark{
     transition: var(--transition-delay);
     color: var(--text-color);
     opacity: var(--high-emphasis-opacity);
+}
+
+,
+.header-element.dark button {
+    color: red;
 }
 
 footer.dark {
@@ -185,7 +193,6 @@ footer.dark {
 
 #theme-changer {
     transition: var(--transition-delay);
-    /* transform: scale(1); */
 }
 
 .search-bar.dark {
